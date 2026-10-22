@@ -1,0 +1,76 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0d3554"><title>Konkan Trip</title>
+<style>
+:root{--n:#0d3554;--b:#eaf5fb;--g:#eaf7ef;--s:#fff5e8;--l:#e2e8ee;--m:#6d7b88}*{box-sizing:border-box}body{margin:0;background:#f6f8fa;color:#193247;font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}header{background:var(--n);color:#fff;padding:27px 18px 22px;border-radius:0 0 22px 22px}.wrap{max-width:900px;margin:auto;padding:0 14px}h1{font-size:30px;line-height:1;margin:0 0 7px}h2{font-size:18px;margin:0 0 12px}.sub{opacity:.8;margin:0}.pills{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0}.pill{font-size:12px;background:#ffffff18;border:1px solid #ffffff30;padding:5px 9px;border-radius:99px}nav{position:sticky;top:0;z-index:4;background:#fffffff2;border-bottom:1px solid var(--l);display:flex;gap:3px;overflow:auto;padding:7px 10px}nav a{color:var(--n);text-decoration:none;font-weight:700;font-size:12px;padding:7px 8px;white-space:nowrap}main{padding:15px 0}.section{margin-bottom:13px}.card{background:#fff;border:1px solid var(--l);border-radius:15px;padding:15px}.days{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.day{padding:13px;border:1px solid var(--l);border-radius:13px}.d1{background:var(--b)}.d2{background:var(--g)}.d3{background:var(--s)}.tag{display:inline-block;font-size:10px;font-weight:800;color:#fff;background:var(--n);padding:4px 7px;border-radius:6px;margin-bottom:9px}.route{font-weight:750;margin-bottom:7px}.small{font-size:12px;color:var(--m);margin:4px 0}.btn{display:inline-block;border:0;background:var(--n);color:#fff;text-decoration:none;border-radius:8px;padding:7px 9px;font-weight:700;font-size:12px;cursor:pointer}.light{background:#eef4f7;color:var(--n)}.actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.item{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px;border:1px solid var(--l);border-radius:10px}.item span{font-weight:650;font-size:13px}.hotel{display:flex;justify-content:space-between;gap:12px;align-items:center}.hotel b{font-size:16px}.hotel p{margin:3px 0;color:var(--m);font-size:12px}.facts{display:flex;gap:5px;flex-wrap:wrap;margin-top:7px}.fact{background:#f3f7f9;padding:4px 7px;border-radius:6px;font-size:11px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:10px}.stat{background:#f3f8fb;padding:9px;border-radius:9px}.stat small{display:block;color:var(--m)}.stat b{font-size:17px}.form{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:6px}input,select{width:100%;padding:8px;border:1px solid #d5e0e7;border-radius:8px;font:inherit;background:#fff}.table{overflow:auto;margin-top:9px}table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:7px;border-bottom:1px solid var(--l)}th{color:var(--m)}.muted{font-size:11px;color:var(--m)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:6px}.check{padding:8px;background:#f7fafb;border-radius:8px;font-size:12px}.check input{width:auto;margin-right:5px}.footer{text-align:center;color:var(--m);font-size:10px;padding:2px 0 20px}@media(max-width:680px){.days{grid-template-columns:1fr}.hotel{display:block}.grid{grid-template-columns:1fr}.form{grid-template-columns:1fr 1fr}.form .btn{grid-column:1/-1}}@media(max-width:420px){.form{grid-template-columns:1fr}.form .btn{grid-column:auto}.stats{grid-template-columns:1fr 1fr}.checks{grid-template-columns:1fr}}@media print{nav,.no-print,.btn{display:none!important}body{background:#fff}}
+</style></head><body>
+<header><div class="wrap"><h1>Konkan Trip</h1><p class="sub">Pune · Guhagar · Ganpatipule · Pawas</p><div class="pills"><span class="pill">3 Days</span><span class="pill">6:30 AM start</span><span class="pill">5 PM return</span></div><div class="actions no-print"><button class="btn" id="locate">📍 Current location</button><button class="btn light" onclick="window.print()">Print / PDF</button></div><small id="status"></small></div></header>
+<nav><a href="#plan">Plan</a><a href="#stay">Stay</a><a href="#places">Places</a><a href="#maps">Maps</a><a href="#money">Expenses</a></nav>
+<main class="wrap">
+<section id="plan" class="section"><div class="days">
+<article class="day d1"><span class="tag">DAY 1</span><h2>Pune → Guhagar</h2><div class="route">6:30 AM</div><div class="small">🚗 ~6–7 hrs</div><div class="small">🌅 Guhagar Beach</div><a class="btn current" data-dest="Guhagar, Maharashtra" target="_blank">Directions</a></article>
+<article class="day d2"><span class="tag">DAY 2</span><h2>Ganpatipule + Pawas</h2><div class="route">Full day</div><div class="small">🛕 Ganpatipule</div><div class="small">🕉 Pawas Ashram</div><a class="btn current" data-dest="Ganpatipule, Maharashtra" target="_blank">Directions</a></article>
+<article class="day d3"><span class="tag">DAY 3</span><h2>Guhagar → Pune</h2><div class="route">Early start</div><div class="small">🚗 ~6–7 hrs</div><div class="small">🏠 Pune by 5 PM</div><a class="btn current" data-dest="Pune, Maharashtra" target="_blank">Directions</a></article>
+</div></section>
+<section id="stay" class="section card"><h2>🏡 Stay</h2><div class="hotel"><div><b>Gopikanta Home Stays</b><p>Guhagar · Khalchapat</p><div class="facts"><span class="fact">⭐ 4.9/5</span><span class="fact">Parking</span><span class="fact">Food</span><span class="fact">Sea view</span></div></div><div class="actions"><a class="btn current" data-dest="Gopikanta Home Stays, Khalchapat, Guhagar, Maharashtra" target="_blank">📍 Map</a><a class="btn light" href="tel:+919421137132">📞 Call</a></div></div></section>
+<section id="places" class="section card"><h2>📍 Places</h2><div class="grid">
+<div class="item"><span>Guhagar Beach</span><a class="btn current" data-dest="Guhagar Beach" target="_blank">Map</a></div><div class="item"><span>Vyadeshwar Temple</span><a class="btn current" data-dest="Vyadeshwar Temple Guhagar" target="_blank">Map</a></div><div class="item"><span>Hedvi Ganesh Temple</span><a class="btn current" data-dest="Hedvi Ganesh Temple" target="_blank">Map</a></div><div class="item"><span>Velneshwar Temple</span><a class="btn current" data-dest="Velneshwar Temple Beach" target="_blank">Map</a></div><div class="item"><span>Ganpatipule Temple</span><a class="btn current" data-dest="Ganpatipule Temple" target="_blank">Map</a></div><div class="item"><span>Pawas Ashram</span><a class="btn current" data-dest="Swami Swarupanand Ashram Pawas" target="_blank">Map</a></div>
+</div></section>
+<section id="maps" class="section card"><h2>🗺 Google Maps</h2><p class="muted">Routes start from your current location.</p><div class="grid"><div class="item"><span>→ Guhagar</span><a class="btn current" data-dest="Guhagar, Maharashtra" target="_blank">Open</a></div><div class="item"><span>→ Ganpatipule</span><a class="btn current" data-dest="Ganpatipule, Maharashtra" target="_blank">Open</a></div><div class="item"><span>→ Pawas</span><a class="btn current" data-dest="Pawas, Maharashtra" target="_blank">Open</a></div><div class="item"><span>→ Pune</span><a class="btn current" data-dest="Pune, Maharashtra" target="_blank">Open</a></div></div></section>
+<section id="money" class="section card"><h2>₹ Expenses</h2><div class="stats"><div class="stat"><small>Total</small><b id="total">₹0</b></div><div class="stat"><small>People</small><b id="count">2</b></div><div class="stat"><small>Per person</small><b id="avg">₹0</b></div></div><input id="people" value="Person 1, Person 2" placeholder="Names, comma separated" style="margin-bottom:7px"><div class="form"><input id="desc" placeholder="Expense"><input id="amount" type="number" placeholder="₹ Amount"><select id="payer"></select><button class="btn" id="add">Add</button></div><div class="table" id="table"></div><p class="muted">Saved on this phone only.</p></section>
+<section class="section card" id="checklist"><h2>✓ Must-Have Checklist</h2>
+<div class="checks">
+<label class="check"><input type="checkbox"> Driving licence + RC + insurance</label>
+<label class="check"><input type="checkbox"> FASTag active + balance</label>
+<label class="check"><input type="checkbox"> Fuel tank filled</label>
+<label class="check"><input type="checkbox"> Tyres + spare tyre + air checked</label>
+<label class="check"><input type="checkbox"> Brakes / engine fluids checked</label>
+<label class="check"><input type="checkbox"> Hotel booking confirmed</label>
+<label class="check"><input type="checkbox"> Hotel check-in / contact saved</label>
+<label class="check"><input type="checkbox"> Google Maps + offline route</label>
+<label class="check"><input type="checkbox"> Power bank + charging cables</label>
+<label class="check"><input type="checkbox"> Cash + UPI + cards</label>
+<label class="check"><input type="checkbox"> Drinking water</label>
+<label class="check"><input type="checkbox"> Road-trip snacks</label>
+<label class="check"><input type="checkbox"> Basic first-aid kit</label>
+<label class="check"><input type="checkbox"> Personal medicines</label>
+<label class="check"><input type="checkbox"> ORS / electrolytes</label>
+<label class="check"><input type="checkbox"> Mosquito / insect repellent</label>
+<label class="check"><input type="checkbox"> Sunscreen + sunglasses</label>
+<label class="check"><input type="checkbox"> Cap / hat</label>
+<label class="check"><input type="checkbox"> Comfortable walking footwear</label>
+<label class="check"><input type="checkbox"> Extra clothes + towels</label>
+<label class="check"><input type="checkbox"> Small umbrella / rain protection</label>
+<label class="check"><input type="checkbox"> Torch / emergency light</label>
+<label class="check"><input type="checkbox"> Wet/dry bags + garbage bags</label>
+<label class="check"><input type="checkbox"> ID proof for all travellers</label>
+<label class="check"><input type="checkbox"> Temple timings checked</label>
+<label class="check"><input type="checkbox"> Modest temple clothing</label>
+<label class="check"><input type="checkbox"> Beach clothes + spare set</label>
+<label class="check"><input type="checkbox"> Beach footwear / sandals</label>
+<label class="check"><input type="checkbox"> Do not swim in rough sea</label>
+<label class="check"><input type="checkbox"> Keep valuables away from beach</label>
+<label class="check"><input type="checkbox"> Baby diapers + wipes</label>
+<label class="check"><input type="checkbox"> Baby feeding supplies / bottles</label>
+<label class="check"><input type="checkbox"> Baby food / formula as required</label>
+<label class="check"><input type="checkbox"> Baby's clothes + extra clothes</label>
+<label class="check"><input type="checkbox"> Baby blanket / comfort item</label>
+<label class="check"><input type="checkbox"> Baby sunscreen / sun protection</label>
+<label class="check"><input type="checkbox"> Baby-safe insect protection</label>
+<label class="check"><input type="checkbox"> Baby medicines / prescribed items</label>
+<label class="check"><input type="checkbox"> Baby changing mat + disposal bags</label>
+<label class="check"><input type="checkbox"> Baby carrier / stroller as needed</label>
+<label class="check"><input type="checkbox"> Baby's water / feeding water</label>
+<label class="check"><input type="checkbox"> Emergency contacts saved</label>
+</div>
+<p class="muted" style="margin-top:10px">Konkan tip: keep essentials in one easily reachable day bag. Do not leave valuables or a baby unattended in the car, especially during beach and temple stops.</p>
+</section>
+<div class="footer">Use Google Maps for live traffic.</div></main>
+<script>
+let people=JSON.parse(localStorage.getItem('kt_people')||'null')||['Person 1','Person 2'],expenses=JSON.parse(localStorage.getItem('kt_expenses')||'[]'),coords=null;
+const $=x=>document.getElementById(x),money=n=>'₹'+(n||0).toLocaleString('en-IN',{maximumFractionDigits:0});
+function render(){people=[...new Set(people.filter(Boolean))];$('people').value=people.join(', ');$('count').textContent=people.length;$('payer').innerHTML=people.map(p=>'<option>'+p.replace(/[<>&"]/g,'')+'</option>').join('');let t=expenses.reduce((s,e)=>s+e.amount,0);$('total').textContent=money(t);$('avg').textContent=money(people.length?t/people.length:0);$('table').innerHTML=expenses.length?'<table><tr><th>Expense</th><th>Paid by</th><th>Amount</th><th></th></tr>'+expenses.map((e,i)=>'<tr><td>'+e.desc+'</td><td>'+e.payer+'</td><td>'+money(e.amount)+'</td><td><button class="btn light" onclick="del('+i+')">×</button></td></tr>').join('')+'</table>':'<div class="muted">No expenses yet.</div>';localStorage.setItem('kt_people',JSON.stringify(people));localStorage.setItem('kt_expenses',JSON.stringify(expenses))}
+window.del=i=>{expenses.splice(i,1);render()};$('people').onchange=()=>{people=$('people').value.split(',').map(x=>x.trim()).filter(Boolean);render()};$('add').onclick=()=>{let d=$('desc').value.trim(),a=Number($('amount').value);if(!d||a<=0)return;expenses.push({desc:d,amount:a,payer:$('payer').value});$('desc').value='';$('amount').value='';render()};
+function mapUrl(d){let o=coords?coords.lat+','+coords.lng:'Current Location';return 'https://www.google.com/maps/dir/?api=1&origin='+encodeURIComponent(o)+'&destination='+encodeURIComponent(d)+'&travelmode=driving'}
+function update(){document.querySelectorAll('.current').forEach(a=>a.href=mapUrl(a.dataset.dest))}
+$('locate').onclick=()=>{if(!navigator.geolocation){$('status').textContent=' GPS unavailable';return}$('status').textContent=' Getting location…';navigator.geolocation.getCurrentPosition(p=>{coords={lat:p.coords.latitude,lng:p.coords.longitude};update();$('status').textContent=' ✓ Location ready'},()=>{$('status').textContent=' Allow location access'}, {enableHighAccuracy:true,timeout:10000,maximumAge:60000})};
+document.querySelectorAll('.check input').forEach((c,i)=>{c.checked=localStorage.getItem('kt_check'+i)==='1';c.onchange=()=>localStorage.setItem('kt_check'+i,c.checked?'1':'0')});render();update();
+</script></body></html>
